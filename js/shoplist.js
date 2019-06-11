@@ -3,11 +3,11 @@ $(function () {
   $.ajax({
     url: 'shoplist.xml',
     dataType: 'xml',
-    success: function (data) {
+    success: function (xml) {
       // NEWSページ
 
       var insertContents = '';
-      $('item', data).each(function () {
+      $('item', xml).each(function () {
         var thisItems = $(this);
         insertContents += '<li>';
         insertContents += '<p class="shop-name">';
