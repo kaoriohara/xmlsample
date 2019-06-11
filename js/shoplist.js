@@ -6,19 +6,19 @@ $(function () {
     success: function (data) {
       // NEWSページ
 
-      var insertContents = '';
+      var insertShoplists = '';
       $('shop', data).each(function () {
         var thisAddress = $(this);
-        insertContents += '<li>';
-        insertContents += '<p class="shop-name">';
-        insertContents += thisAddress.children('name').text();
-        insertContents += '</p class="shop-name">';
-        insertContents += '<p class="shop-address">';
-        insertContents += thisAddress.children('address').text();
-        insertContents += '</p class="shop-address">';
-        insertContents += '</li>';
+        insertShoplists += '<li>';
+        insertShoplists += '<p class="shop-name">';
+        insertShoplists += thisAddress.children('name').text();
+        insertShoplists += '</p class="shop-name">';
+        insertShoplists += '<p class="shop-address">';
+        insertShoplists += thisAddress.children('address').text();
+        insertShoplists += '</p class="shop-address">';
+        insertShoplists += '</li>';
       });
-      $('.linkbox-shoplist').append(insertContents);
+      $('.linkbox-shoplist').append(insertShoplists);
     }
   });
 });
