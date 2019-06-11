@@ -8,13 +8,13 @@ $(function () {
 
       var insertContents = '';
       $('shop', data).each(function () {
-        var thisItem = $(this);
+        var thisAddress = $(this);
         insertContents += '<li>';
         insertContents += '<p class="shop-name">';
-        insertContents += thisItem.children('name').text();
+        insertContents += thisAddress.children('name').text();
         insertContents += '</p class="shop-name">';
         insertContents += '<p class="shop-address">';
-        insertContents += thisItem.children('address').text();
+        insertContents += thisAddress.children('address').text();
         insertContents += '</p class="shop-address">';
         insertContents += '</li>';
       });
