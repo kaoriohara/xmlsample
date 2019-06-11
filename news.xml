@@ -3,29 +3,55 @@
     <item>
         <time>16.01.15</time>
         <link>#</link>
-        <article>ダミーダミーダミー01</article>
+        <article><! [CDATA[
+        <!-- ＜ーーーーー内容（改行は＜br＞）ーーーーー＞ -->
+        ダミーダミーダミー01
+        <!-- ＜ーーーーー内容ここまでーーーーー＞ -->
+        ]]></article>
     </item>
     <item>
         <time>16.02.20</time>
         <link>#</link>
-        <article>ダミーダミーダミー02</article>
+                <article><! [CDATA[
+        <!-- ＜ーーーーー内容（改行は＜br＞）ーーーーー＞ -->
+        ダミーダミーダミー01
+        <!-- ＜ーーーーー内容ここまでーーーーー＞ -->
+        ]]></article>
     </item>
         <item>
         <time>16.02.20</time>
         <link>#</link>
-        <article>ダミーダミーダミー00</article>
+        <article><! [CDATA[
+        <!-- ＜ーーーーー内容（改行は＜br＞）ーーーーー＞ -->
+        ダミーダミーダミー01
+        <!-- ＜ーーーーー内容ここまでーーーーー＞ -->
+        ]]></article>
     </item>
     <item>
         <time>16.02.20</time>
         <link>#</link>
-        <article>ダミーダミーダミー09</article>
-    </item>    <item>
+        <article><! [CDATA[
+        <!-- ＜ーーーーー内容（改行は＜br＞）ーーーーー＞ -->
+        ダミーダミーダミー01
+        <!-- ＜ーーーーー内容ここまでーーーーー＞ -->
+        ]]></article>
+    </item>
+    <item>
         <time>16.02.20</time>
         <link>#</link>
-        <article>ダミーダミーダミー02</article>
-    </item>    <item>
+        <article><! [CDATA[
+        <!-- ＜ーーーーー内容（改行は＜br＞）ーーーーー＞ -->
+        ダミーダミーダミー01
+        <!-- ＜ーーーーー内容ここまでーーーーー＞ -->
+        ]]></article>
+    </item>
+    <item>
         <time>16.02.20</time>
         <link>#</link>
-        <article>ダミーダミーダミー02</article>
+        <article><! [CDATA[
+        <!-- ＜ーーーーー内容（改行は＜br＞）ーーーーー＞ -->
+        ダミーダミーダミー01
+        <!-- ＜ーーーーー内容ここまでーーーーー＞ -->
+        ]]></article>
     </item>
 </news>
