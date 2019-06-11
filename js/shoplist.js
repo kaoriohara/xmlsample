@@ -7,7 +7,8 @@ $(function () {
     },
     success: function (xml) {
       $(xml).find("shop").each(function () {
-        $(".linkbox-shoplist").append('<li><p class="shop-name">' + $(this).find('name').text() '</p>' + '<p class="shop-address">' + $(this).find('address').text() '</p></li>');
+        $(".linkbox-shoplist").append('<li><p class="shop-name">' + $(this).find('name').text() + '</p>'
+          + '<p class="shop-address">' + $(this).find('address').text() + '</p></li>');
       });
     }
   });
