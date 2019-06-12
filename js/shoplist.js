@@ -17,12 +17,12 @@ $(function () {
   $.ajax({
     url: 'shoplist.xml',
     dataType: 'xml',
-    error: (function (XMLHttpRequest, textStatus, errorThrown) {
+    error: function (XMLHttpRequest, textStatus, errorThrown) {
       alert('error!!!');
       console.log("XMLHttpRequest : " + XMLHttpRequest.status);
       console.log("textStatus     : " + textStatus);
       console.log("errorThrown    : " + errorThrown.message);
-    }),
+    },
     success: function (xml) {
 
       var insertContents = '';
@@ -40,4 +40,4 @@ $(function () {
       $('.linkbox-shoplist').append(insertContents);
     }
   });
-// });
+});
