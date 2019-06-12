@@ -17,9 +17,12 @@ $(function () {
   $.ajax({
     url: 'shoplist.xml',
     dataType: 'xml',
-    error: function () {
-      $("#sample").append('<p>更新中です。再度ページを読み込んでください</p>');
-    },
+    error(function(XMLHttpRequest, textStatus, errorThrown) {
+      alert('error!!!');
+      console.log("XMLHttpRequest : " + XMLHttpRequest.status);
+      console.log("textStatus     : " + textStatus);
+      console.log("errorThrown    : " + errorThrown.message);
+    }),
     success: function (xml) {
 
       var insertContents = '';
@@ -36,5 +39,5 @@ $(function () {
       });
       $('.linkbox-shoplist').append(insertContents);
     }
-  });
 });
+// });
