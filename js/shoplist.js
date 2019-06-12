@@ -17,8 +17,10 @@ $(function () {
   $.ajax({
     url: 'shoplist.xml',
     dataType: 'xml',
+    error: function () {
+      $("#sample").append('<p>更新中です。再度ページを読み込んでください</p>');
+    },
     success: function (xml) {
-      // NEWSページ
 
       var insertContents = '';
       $('item', xml).each(function () {
