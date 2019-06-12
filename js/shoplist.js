@@ -29,7 +29,7 @@ $(function () {
     success: function (xml) {
 
       var insertContent = '';
-      $('item', xml).each(function () {
+      $('shop', xml).each(function () {
         var thisItems = $(this);
         insertContent += '<li>';
         insertContent += '<p class="shop-name">';
