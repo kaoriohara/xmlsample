@@ -31,7 +31,7 @@ $(function () {
         insertContent += '</p class="shop-address">';
         insertContent += '</li>';
       });
-      if (insertContent.length <= 0) { insertContent = '更新中' };
+      if (insertContent.length <= 50) { insertContent = '更新中' };
       $('.linkbox-shoplist').append(insertContent);
     }
   });
