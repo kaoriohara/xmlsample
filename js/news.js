@@ -3,9 +3,14 @@ $(function () {
   $.ajax({
     url: 'news.xml',
     dataType: 'xml',
+    error: function (XMLHttpRequest, textStatus, errorThrown) {
+      console.log("ajax通信に失敗しました");
+      console.log("XMLHttpRequest : " + XMLHttpRequest.status);
+      console.log("textStatus     : " + textStatus);
+      console.log("errorThrown    : " + errorThrown.message);
+    },
     success: function (data) {
       // NEWSページ
-
       var insertContents = '';
       $('item', data).each(function () {
         var thisItem = $(this);

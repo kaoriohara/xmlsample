@@ -17,8 +17,13 @@ $(function () {
   $.ajax({
     url: 'shoplist.xml',
     dataType: 'xml',
+    error: function (XMLHttpRequest, textStatus, errorThrown) {
+      console.log("ajax通信に失敗しました");
+      console.log("XMLHttpRequest : " + XMLHttpRequest.status);
+      console.log("textStatus     : " + textStatus);
+      console.log("errorThrown    : " + errorThrown.message);
+    },
     success: function (xml) {
-
       var insertContent = '';
       $('shop', xml).each(function () {
         var thisItems = $(this);
@@ -31,7 +36,7 @@ $(function () {
         insertContent += '</p class="shop-address">';
         insertContent += '</li>';
       });
-      if (insertContent.length <= 50) { insertContent = '更新中' };
+      if (insertContent.length <= 0) { insertContent = '更新中' };
       $('.linkbox-shoplist').append(insertContent);
     }
   });
