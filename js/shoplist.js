@@ -24,7 +24,7 @@ $(function () {
     //   console.log("errorThrown    : " + errorThrown.message);
     // },
     error: function () {
-      $('.linkbox-shoplist').html('<p>更新中です</p>');
+      $('.linkbox-shoplist').text('<p>更新中です</p>');
     },
     success: function (xml) {
 
