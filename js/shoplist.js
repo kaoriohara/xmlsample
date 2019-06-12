@@ -23,6 +23,9 @@ $(function () {
     //   console.log("textStatus     : " + textStatus);
     //   console.log("errorThrown    : " + errorThrown.message);
     // },
+    error: function () {
+      $('.linkbox-shoplist').html('<p>更新中です</p>');
+    },
     success: function (xml) {
 
       var insertContent = '';
