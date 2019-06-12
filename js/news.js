@@ -20,6 +20,7 @@ $(function () {
         insertContents += '</p>';
         insertContents += '</li>';
       });
+      if (insertContents.length <= 0) { insertContents = '更新中' };
       $('.linkbox-news').append(insertContents);
     }
   });

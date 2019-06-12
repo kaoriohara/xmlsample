@@ -17,15 +17,6 @@ $(function () {
   $.ajax({
     url: 'shoplist.xml',
     dataType: 'xml',
-    // error: function (XMLHttpRequest, textStatus, errorThrown) {
-    //   alert('error!!!');
-    //   console.log("XMLHttpRequest : " + XMLHttpRequest.status);
-    //   console.log("textStatus     : " + textStatus);
-    //   console.log("errorThrown    : " + errorThrown.message);
-    // },
-    error: function (xml) {
-      $('.linkbox-shoplist').text('<p>更新中です</p>');
-    },
     success: function (xml) {
 
       var insertContent = '';
@@ -40,6 +31,7 @@ $(function () {
         insertContent += '</p class="shop-address">';
         insertContent += '</li>';
       });
+      if (insertContent.length <= 0) { insertContent = '更新中' };
       $('.linkbox-shoplist').append(insertContent);
     }
   });
