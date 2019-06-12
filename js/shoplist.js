@@ -17,7 +17,7 @@ $(function () {
   $.ajax({
     url: 'shoplist.xml',
     dataType: 'xml',
-    error(function(XMLHttpRequest, textStatus, errorThrown) {
+    error: (function (XMLHttpRequest, textStatus, errorThrown) {
       alert('error!!!');
       console.log("XMLHttpRequest : " + XMLHttpRequest.status);
       console.log("textStatus     : " + textStatus);
@@ -39,5 +39,5 @@ $(function () {
       });
       $('.linkbox-shoplist').append(insertContents);
     }
-});
+  });
 // });
