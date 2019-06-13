@@ -30,10 +30,10 @@ $(function () {
         insertContent += '<li>';
         insertContent += '<p class="shop-name">';
         insertContent += thisItems.children('name').text();
-        insertContent += '</p class="shop-name">';
+        insertContent += '</p>';
         insertContent += '<p class="shop-address">';
         insertContent += thisItems.children('address').text();
-        insertContent += '</p class="shop-address">';
+        insertContent += '</p>';
         insertContent += '</li>';
       });
       if (insertContent.length <= 0) { insertContent = '更新中' };
